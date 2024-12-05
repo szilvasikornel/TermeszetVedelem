@@ -23,17 +23,17 @@
     // SQL lekérdezés az állatok adatainak lekérdezésére
     $sql = "
         SELECT 
-            AnimalSpecies.ID as AnimalID,
-            AnimalSpecies.CommonName,
-            AnimalSpecies.ScientificName,
-            AnimalSpecies.Status,
-            AnimalSpecies.Class,
-            AnimalSpecies.Weight,
-            Size.Length,
-            Size.Height,
-            AnimalSpecies.Diet
-        FROM AnimalSpecies
-        LEFT JOIN Size ON AnimalSpecies.Size_ID = Size.ID
+            ÁllatFajok.ID as ÁllatID,
+            ÁllatFajok.KözönségesNév,
+            ÁllatFajok.TudományosNév,
+            ÁllatFajok.Állapot,
+            ÁllatFajok.Osztály,
+            ÁllatFajok.Súly,
+            Méret.Hossz,
+            Méret.Magasság,
+            ÁllatFajok.Táplálék
+        FROM ÁllatFajok
+        LEFT JOIN Méret ON ÁllatFajok.Méret_ID = Méret.ID
     ";
 
     // A lekérdezés végrehajtása és ellenőrzése
@@ -48,29 +48,29 @@
     echo "<table style='margin-bottom: 80px;' border='1' cellpadding='5' cellspacing='0'>
             <tr>
                 <th>ID</th>
-                <th>Common Name</th>
-                <th>Scientific Name</th>
-                <th>Status</th>
-                <th>Class</th>
-                <th>Weight</th>
-                <th>Length</th>
-                <th>Height</th>
-                <th>Diet</th>
+                <th>Közönséges Név</th>
+                <th>Tudományos Név</th>
+                <th>Állapot</th>
+                <th>Osztály</th>
+                <th>Súly</th>
+                <th>Hossz</th>
+                <th>Magasság</th>
+                <th>Táplálék</th>
             </tr>";
 
     // Adatok kiírása a táblázatba
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<tr>
-                    <td>" . $row['AnimalID'] . "</td>
-                    <td>" . $row['CommonName'] . "</td>
-                    <td>" . $row['ScientificName'] . "</td>
-                    <td>" . $row['Status'] . "</td>
-                    <td>" . $row['Class'] . "</td>
-                    <td>" . $row['Weight'] . "</td>
-                    <td>" . $row['Length'] . "</td>
-                    <td>" . $row['Height'] . "</td>
-                    <td>" . $row['Diet'] . "</td>
+                    <td>" . $row['ÁllatID'] . "</td>
+                    <td>" . $row['KözönségesNév'] . "</td>
+                    <td>" . $row['TudományosNév'] . "</td>
+                    <td>" . $row['Állapot'] . "</td>
+                    <td>" . $row['Osztály'] . "</td>
+                    <td>" . $row['Súly'] . "</td>
+                    <td>" . $row['Hossz'] . "</td>
+                    <td>" . $row['Magasság'] . "</td>
+                    <td>" . $row['Táplálék'] . "</td>
                 </tr>";
         }
     } else {
