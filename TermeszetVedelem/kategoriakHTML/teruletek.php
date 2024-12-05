@@ -23,13 +23,13 @@
     // SQL lekérdezés a területek adatainak lekérdezésére
     $sql = "
         SELECT 
-            Area.ID as AreaID,
-            Location.Country,
-            Location.EcologicalRegion,
-            Area.Type,
-            Area.ProtectionLevel
-        FROM Area
-        LEFT JOIN Location ON Area.Location_ID = Location.ID
+            Terület.ID as TerületID,
+            Helyszín.Ország,
+            Helyszín.ÖkológiaiRégió,
+            Terület.Típus,
+            Terület.VédelmiSzint
+        FROM Terület
+        LEFT JOIN Helyszín ON Terület.Helyszín_ID = Helyszín.ID
     ";
 
     // A lekérdezés végrehajtása
@@ -39,21 +39,21 @@
     echo "<table style='margin-bottom: 80px;'>
             <tr>
                 <th>ID</th>
-                <th>Country</th>
-                <th>Ecological Region</th>
-                <th>Type</th>
-                <th>Protection Level</th>
+                <th>Ország</th>
+                <th>Ökológiai Régió</th>
+                <th>Típus</th>
+                <th>Védelmi Szint</th>
             </tr>";
 
     // Adatok kiírása a táblázatba
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<tr>
-                    <td>" . $row['AreaID'] . "</td>
-                    <td>" . $row['Country'] . "</td>
-                    <td>" . $row['EcologicalRegion'] . "</td>
-                    <td>" . $row['Type'] . "</td>
-                    <td>" . $row['ProtectionLevel'] . "</td>
+                    <td>" . $row['TerületID'] . "</td>
+                    <td>" . $row['Ország'] . "</td>
+                    <td>" . $row['ÖkológiaiRégió'] . "</td>
+                    <td>" . $row['Típus'] . "</td>
+                    <td>" . $row['VédelmiSzint'] . "</td>
                 </tr>";
         }
     } else {
