@@ -1,0 +1,244 @@
+/* Alap beállítások */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    background-image: url('../images/hatter.jpg'); /* Szövetmintás háttér */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.kalkulator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255,255,255,0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#labnyom {
+    font-size: 2rem;
+    color: #28a745;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #28a745;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Gombok konténer */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* A gombok közötti távolság beállítása */
+    margin-top: 20px; /* A form és a gombok közötti távolság */
+}
+
+/* Kiszámít gomb és Vissza gomb közös stílusa */
+button, .back-button {
+    width: 48%; /* Mindkét gomb szélessége ugyanakkora */
+    padding: 12px;
+    height: 50px; /* A gombok magasságának beállítása */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem; /* Ugyanakkora betűméret mindkét gomb esetében */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center; /* A szöveg középre igazítása vízszintesen */
+    align-items: center; /* A szöveg középre igazítása függőlegesen */
+}
+
+button:hover, .back-button:hover {
+    background-color: #218838;
+}
+
+button:focus, .back-button:focus {
+    outline: none;
+}
+
+/* Eredmény megjelenítés */
+#result {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#result h2 {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+#footprint-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Mobil eszközök */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    select,
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+header {
+    background-color: rgba(44, 107, 47, 0.85); /* Félig átlátszó zöld */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+.felkover{
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #1f4f1c;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2c6b2f;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Vissza nyíl gomb stílusa */
+.back-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.1rem; /* Ugyanakkora betűméret mint a Kiszámít gomb */
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center; /* Szöveg középre igazítása vízszintesen */
+    align-items: center; /* Szöveg középre igazítása függőlegesen */
+}
+
+.back-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: rgb(44, 107, 47);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    position: fixed;
+    font-weight: bold;
+}

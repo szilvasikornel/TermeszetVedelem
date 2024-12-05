@@ -1,0 +1,132 @@
+/* Alap stílusok */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('../images/hatter.jpg'); /* Szövetmintás háttér */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(44, 107, 47, 0.85); /* Félig átlátszó zöld */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+#udvozlo {
+    font-size: 60px;
+    margin: 0px 20px 90px 20px;
+    font-weight: bold;
+    color: #333; /* A szöveg színe átlátszó, hogy a háttér-átmenet látszódjon */
+}
+
+.szoveg {
+    display: none; /* Alapértelmezés szerint mindegyik oldal el van rejtve */
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+
+/* Kezdőlap szakasz dizájn */
+.mainContent {
+    position: relative;
+    padding: 80px 20px;
+    margin: 20px auto;
+    max-width: 1000px; /* Csökkentett maximális szélesség */
+    background: rgba(255, 255, 255, 0.7); /* Fehér háttér, de átlátszó */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Finom blur háttér */
+    margin-bottom: 80px;
+}
+
+.intro-text {
+    position: relative;
+    z-index: 2; /* Szöveg a háttér előtt */
+    text-align: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.intro-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4c9a2a; /* Természetes zöld árnyalat */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.intro-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 10px 10px;    
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/forest.jpg') center/cover no-repeat; /* Kép vagy mintás háttér */
+    opacity: 0.3;
+    z-index: 1; /* Háttér mögött */ 
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Középre igazítás vízszintesen */ 
+    width: auto;
+    color: #333;
+    font-size: 20px;
+}
+
+
