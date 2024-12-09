@@ -5,7 +5,7 @@
     </div>
     <nav>
         <ul>
-            <li><a href="../mainPHP/main.php" class="felkover">Kezdőlap</a></li>
+            <li><a href="../mainPHP/index.php" class="felkover">Kezdőlap</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn felkover">Kategóriák</a>
                 <div class="dropdown-content">
