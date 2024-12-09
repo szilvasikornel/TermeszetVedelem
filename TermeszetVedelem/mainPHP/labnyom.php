@@ -50,7 +50,7 @@
                 </select>
 
                 <div class="button-container">
-                    <a href="javascript:history.back()" class="back-button">← Vissza</a>
+                    <a href="javascript:history.back()" class="back-button">Vissza</a>
                     <button type="submit" class="calculate-button">Kiszámít</button>
                 </div>
             </form>
