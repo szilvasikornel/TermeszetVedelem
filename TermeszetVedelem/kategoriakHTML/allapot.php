@@ -18,6 +18,8 @@
                 <hr>
                     <div class="text-container">
                         <ul>
+                            <li>Az élővilág alapvető szerepet játszik bolygónk működésében, hiszen az élőlények kölcsönhatásai biztosítják az ökoszisztémák egyensúlyát. Az állatok, növények és mikroorganizmusok mind hozzájárulnak a levegő tisztításához, a víz körforgásához, valamint a tápanyagok újrahasznosításához. Az élővilág megóvása nemcsak az emberi életminőséget, hanem a Föld hosszú távú fenntarthatóságát is biztosítja. Minden egyes élőlény értékes része a természetes körforgásnak, amelyet védenünk kell a jövő generációi számára.</li>
+                            <hr>
                             <li>Az állatvilág fontosságát nehéz túlhangsúlyozni, hiszen szerves része bolygónk ökológiai egyensúlyának, kulturális értékeinknek és mindennapi életünknek. Az állatok létfontosságú szerepet játszanak az ökoszisztémák működésében: segítenek a növényi beporzásban, a talaj termékenységének fenntartásában, és a tápláléklánc fenntartásában. Nélkülük a természetben előforduló folyamatok lelassulnának, vagy akár teljesen felborulhatnának, ami katasztrofális hatással lenne az emberiségre is.</li>
                             <hr>
                             <li>Az állatvilág nemcsak ökológiai, hanem gazdasági és tudományos szempontból is fontos. Sok faj nyújt közvetlen hasznot az ember számára: élelmiszer, gyógyszerek, vagy akár ökológiai szolgáltatások formájában. A biodiverzitás csökkenése azonban veszélyezteti ezeket az erőforrásokat. Például a méhek kihalása komoly következményekkel járna a mezőgazdaságra nézve, mivel beporzóként pótolhatatlanok.</li>
