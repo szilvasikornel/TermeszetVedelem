@@ -35,7 +35,12 @@ document.getElementById("footprint-form").addEventListener("submit", function(ev
     } else if (totalFootprint >= 250 && totalFootprint < 400) {
         recommendation = "Ez a számítás a magas ökolábnyomot jelzi. Próbáljon csökkenteni az energiafogyasztást és a repülőutakat.";
     } else {
-        recommendation = "A becsült ökolábnyoma nagyon magas. Próbáljon alternatívákat találni, mint a tömegközlekedés, elektromos autó, és csökkentse a húsfogyasztást.";
+        // Ha a felhasználó nem vegetáriánus, akkor jöhet a húsfogyasztás csökkentésére vonatkozó tanács is
+        if (meat > 0) {
+            recommendation = "A becsült ökolábnyoma nagyon magas. Próbáljon alternatívákat találni, mint a tömegközlekedés, elektromos autó, és csökkentse a húsfogyasztást.";
+        } else {
+            recommendation = "A becsült ökolábnyoma nagyon magas. Próbáljon alternatívákat találni, mint a tömegközlekedés és elektromos autó.";
+        }
     }
 
     document.getElementById("recommendation").textContent = recommendation;
