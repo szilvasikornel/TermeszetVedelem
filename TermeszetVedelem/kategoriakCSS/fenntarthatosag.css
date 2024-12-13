@@ -1,0 +1,104 @@
+#udvozlo {
+    font-size: 60px;
+    margin: 10px 20px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #A8B9C7, #6B7A8C, #2C3E50); /* Kékes-szürke átmenet */
+    -webkit-background-clip: text; /* Webkit előtag a szöveg háttérszínének alkalmazására */
+    background-clip: text; /* Szabványos háttér-clip a szövegre */
+    color: transparent; /* A szöveg színe átlátszó, hogy a háttér-átmenet látszódjon */
+}
+
+h4 { 
+    font-size: 40px;    
+    margin: 0px 20px 90px 20px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #A8B9C7, #505f71, #2C3E50); /* Kékes-szürke átmenet */
+    -webkit-background-clip: text; /* Webkit előtag a szöveg háttérszínének alkalmazására */
+    background-clip: text; /* Szabványos háttér-clip a szövegre */
+    color: transparent; /* A szöveg színe átlátszó, hogy a háttér-átmenet látszódjon */
+}
+
+.szoveg {
+    display: none; /* Alapértelmezés szerint mindegyik oldal el van rejtve */
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.mainContent {
+    position: relative;
+    padding: 80px 20px;
+    margin: 20px auto;
+    max-width: 1000px; /* Csökkentett maximális szélesség */
+    background: rgba(255, 255, 255, 0.7); /* Fehér háttér, de átlátszó */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Finom blur háttér */
+    margin-bottom: 80px;
+}
+
+.intro-text {
+    position: relative;
+    z-index: 2; /* Szöveg a háttér előtt */
+    text-align: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.intro-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4c9a2a; /* Természetes zöld árnyalat */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.intro-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 10px 10px;    
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/forest.jpg') center/cover no-repeat; /* Kép vagy mintás háttér */
+    opacity: 0.3;
+    z-index: 1; /* Háttér mögött */ 
+}
+
+hr
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Gomb stílusok */
+button, .action-button {
+    width: 70%;  /* A gomb szélessége */
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.action-button:hover {
+    background-color: #218838;
+}
+
+button:focus, .action-button:focus {
+    outline: none;
+}
