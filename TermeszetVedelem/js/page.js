@@ -29,16 +29,16 @@ function updatePageNumber(pageNumber) {
 function updateButtonState(pageNumber) {
     // Előző gomb állapota
     if (pageNumber === 1) {
-        prevButton.disabled = true;
+        prevButton.disabled = true;  // Az első oldalon nem kattintható
     } else {
-        prevButton.disabled = false;
+        prevButton.disabled = false; // Egyébként kattintható
     }
 
     // Következő gomb állapota
     if (pageNumber === totalPages) {
-        nextButton.disabled = true;
+        nextButton.disabled = true;  // Az utolsó oldalon nem kattintható
     } else {
-        nextButton.disabled = false;
+        nextButton.disabled = false; // Egyébként kattintható
     }
 }
 
