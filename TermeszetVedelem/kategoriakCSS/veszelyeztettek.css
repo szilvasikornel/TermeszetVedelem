@@ -1,0 +1,132 @@
+ /* Alap CSS formázás */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cím formázása */
+h2 {
+    font-size: 60px;
+    padding-top: 60px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #A8B9C7, #6B7A8C, #2C3E50); /* Kékes-szürke átmenet */
+    -webkit-background-clip: text; /* Webkit előtag a szöveg háttérszínének alkalmazására */
+    background-clip: text; /* Szabványos háttér-clip a szövegre */
+    color: white; /* A szöveg színe átlátszó, hogy a háttér-átmenet látszódjon */
+    text-align: center;
+}
+
+#h2cim{
+    margin-bottom: 5px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; /* Vízszintesen középre helyezi a gombot */
+    align-items: center; /* Függőlegesen is középre helyezi (ha a konténernek van magassága) */
+  }
+  
+  .jatekGomb {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50; /* Zöld háttér */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 60px;
+  }
+  
+  .jatekGomb a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .jatekGomb:hover {
+    background-color: #45a049; /* Sötétebb zöld a hover hatásra */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .jatekGomb:active {
+    background-color: #388e3c; /* Kattintás után még sötétebb zöld */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+/* Táblázat stílus */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #6B7A8C;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+tr:nth-child(even) td {
+    background-color: #e6e6e6; /* Páros sorok színezése */
+}
+
+tr:hover {
+    background-color: #d5d5d5; /* Hover effekt */
+}
+
+/* Responszív táblázat (mobilbarát) */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+.custom-button {
+    background-color: #4CAF50; /* Zöld háttér */
+    color: white; /* Fehér szöveg */
+    padding: 15px 32px; /* Felül és alul 15px, jobbra és balra 32px */
+    text-align: center; /* Középre igazított szöveg */
+    text-decoration: none; /* Nincs aláhúzás */
+    display: inline-block; /* In-line blokk elem */
+    font-size: 20px; /* Betűméret */
+    margin: 0 0 50px 0; /* Margó fölül és alul 20px */
+    border-radius: 8px; /* Lekerekített sarkok */
+    transition: background-color 0.3s ease; /* Áttűnés effektus a háttérszín változásánál */
+}
+
+.custom-button:hover {
+    background-color: #45a049; /* Sötétebb zöld szín hover esetén */
+}
+
+/* A gomb konténerének középre igazítása */
+.button-container {
+    text-align: center; /* A gomb vízszintesen középre igazítása */
+    margin: 20px 0; /* További margó a konténer körül */
+}

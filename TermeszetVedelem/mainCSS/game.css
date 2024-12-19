@@ -1,0 +1,87 @@
+/* Középre igazított négyzet statikus módon */
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    height: 100vh;    
+    margin: 0;                 
+}
+
+.alap {
+    width: auto;
+    height: auto;
+    border: none;
+    background: rgba(255, 255, 255, 0.3); /* Fehér háttér, de átlátszó */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Finom blur háttér */
+    margin: 50px;
+    padding: 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card {
+    width: 120px;
+    height: 120px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.card img {
+    width: 100%;
+}
+.matched {
+    background-color: #888888;
+    cursor: default;
+}
+.actions {
+    display: flex;
+    justify-content: center; /* Középre helyezi a gombokat */
+    gap: 15px; /* Távolság a gombok között */
+    margin-top: 20px; /* Távolság a kártyák aljától */
+    margin-bottom: 30px;
+}
+
+.actions button:hover {
+    background-color: #45a049; /* Sötétebb zöld hover effekt */
+    transform: scale(1.05); /* Gomb méretének növelése, ha fölé viszik */
+}
+
+.szoveg{
+    text-align: center;
+}
+
+.actions button{
+    padding: 10px 20px; /* Belső távolság */
+    background-color: #4CAF50; /* Zöld háttér */
+    color: white; /* Fehér szöveg */
+    border: none; /* Nincs keret */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* A betűk mérete */
+    border-radius: 8px; /* Lekerekített sarkok */
+    cursor: pointer; /* Kéz ikont ad, hogy kattintható */
+    transition: background-color 0.3s, transform 0.3s; /* Animációs hatás a színváltáshoz */
+}
+
+.back{
+    text-decoration: none;
+    color: white;
+}
