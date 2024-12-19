@@ -315,3 +315,15 @@ button:disabled {
 button:disabled:hover {
     background-color: #4CAF50; /* Hover effektus eltávolítása */
 }
+
+footer {
+    background-color: rgb(44, 107, 47);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    position: fixed;
+    font-weight: bold;
+}
